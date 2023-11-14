@@ -7,6 +7,8 @@ phases:
   build:
     commands:
       - echo "Building..."
+      - npm --version
+      - node -v
       - npm run build
   post_build:
     commands:
