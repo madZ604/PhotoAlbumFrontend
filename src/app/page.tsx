@@ -251,7 +251,7 @@ export default function Component() {
               <div className="grid grid-cols-4 gap-4">
                 {/* Iterate through searchResults and display images */}
                 {searchResults && searchResults.map((imagePath, index) => (
-                  <a href={imagePath} target="_blank">
+                  <a href={imagePath} target="_blank" key={imagePath}>
                     <img
                       key={index}
                       alt={`Search result ${index}`}
