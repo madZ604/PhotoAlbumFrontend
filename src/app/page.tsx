@@ -231,11 +231,11 @@ export default function Component() {
                       <line x1="12" x2="12" y1="19" y2="22" />
                     </svg>
                   )}
-                  <span className="sr-only">Use Voice Search</span>
+                  <span className="sr-only">Voice Search</span>
                 </Button>
               </div>
               
-              <p className="text-sm text-gray-500">* Click the microphone button to record and again to stop when it is flashing.</p> 
+              <p className="text-sm text-gray-500">* Please Click the microphone button to record and again to stop when it is flashing.</p> 
               <div className="flex justify-center">
                 <Button onClick={handleSearch}>
                   Search
