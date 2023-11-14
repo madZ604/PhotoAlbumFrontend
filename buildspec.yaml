@@ -4,6 +4,9 @@ phases:
   install:
     runtime-versions:
       nodejs: "latest"
+  pre_build:
+    commands:
+      - npm install -g npm stable
   build:
     commands:
       - echo "Building..."
