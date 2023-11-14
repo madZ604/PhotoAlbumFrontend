@@ -231,7 +231,7 @@ export default function Component() {
                       <line x1="12" x2="12" y1="19" y2="22" />
                     </svg>
                   )}
-                  <span className="sr-only">Voice Search</span>
+                  <span className="sr-only">Use Voice Search</span>
                 </Button>
               </div>
               
