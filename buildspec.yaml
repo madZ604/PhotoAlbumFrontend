@@ -23,7 +23,7 @@ artifacts:
     - '**/*'
   base-directory: 'out/'
   discard-paths: no
-
+  name: BuildArtifact
 # cache:
 #   paths:
 #     - 'node_modules/*/'
