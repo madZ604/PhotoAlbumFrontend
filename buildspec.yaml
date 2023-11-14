@@ -9,8 +9,6 @@ phases:
       - echo "Installing..."
       - npm install
       - echo "Building..."
-      - npm --version
-      - node -v
       - npm run build
   post_build:
     commands:
@@ -21,9 +19,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'out/'
   discard-paths: no
   name: BuildArtifact
-# cache:
-#   paths:
-#     - 'node_modules/*/'
