@@ -24,7 +24,6 @@ artifacts:
   base-directory: 'out/'
   discard-paths: no
 
-# 
 # cache:
 #   paths:
 #     - 'node_modules/*/'
