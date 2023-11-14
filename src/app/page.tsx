@@ -235,7 +235,7 @@ export default function Component() {
                 </Button>
               </div>
               
-              <p className="text-sm text-gray-500">* Please Click the microphone button to record and again to stop when it is flashing.</p> 
+              <p className="text-sm text-gray-500">* Please click on the microphone button to record and again to stop when it is flashing.</p> 
               <div className="flex justify-center">
                 <Button onClick={handleSearch}>
                   Search
