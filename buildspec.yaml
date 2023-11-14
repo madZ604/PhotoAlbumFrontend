@@ -4,10 +4,6 @@ phases:
   install:
     runtime-versions:
       nodejs: "latest"
-  pre_build:
-    commands:
-      - npm install -g npm stable
-      # - npm install -g node
   build:
     commands:
       - echo "Building..."
@@ -16,7 +12,7 @@ phases:
     commands:
       - echo "Build completed"
       - echo "Uploading build to S3 Bucket"
-      - aws s3 sync ./build s3://frontend-photoalbum-2 --delete
+      - aws s3 sync ./build s3://build-frontend --delete
 
 # artifacts:
 #   files:
