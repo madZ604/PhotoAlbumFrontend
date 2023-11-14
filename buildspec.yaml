@@ -18,11 +18,11 @@ phases:
       - echo "Uploading build to S3 Bucket"
       - aws s3 sync ./out s3://frontend-photoalbum-2 --delete
 
-# artifacts:
-#   files:
-#     - '**/*'
-#   base-directory: 'build/'
-#   discard-paths: no
+artifacts:
+  files:
+    - 'out/*'
+  base-directory: 'out/'
+  discard-paths: no
 
 
 # cache:
