@@ -15,13 +15,13 @@ phases:
     commands:
       - echo "Build completed"
       - echo "Uploading build to S3 Bucket"
-      - aws s3 cp ./out s3:// --recursive
+      - aws s3 sync ./out s3://ai-photos-album-app-whd-mc --delete
 
-artifacts:
-  files:
-    - '*/'
-  base-directory: out # the output directory
+# artifacts:
+#   files:
+#     - '*/'
+#   base-directory: out # the output directory
 
-cache:
-  paths:
-    - 'node_modules/*/'
+# cache:
+#   paths:
+#     - 'node_modules/*/'
