@@ -20,4 +20,4 @@ artifacts:
   files:
     - '**/*'
   discard-paths: no
-  name: BuildArtifact
+  name: DeployArtifact
